@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window-one">
+        <header>
+            <h1>
+                Task Timer
+            </h1>
+            <h2>
+                Be productive...but only in small increments.
+            </h2>
+        </header>
+        <div class="user-inputs">
+            <div class="name">
+                <p>What's your name, friend?</p>
+                <input type="text" class="user-name">
+            </div>
+            <div class="task">
+                <p>What task would you like to work on today?</p>
+                <input type="text" class="user-task">
+            </div>
+            <div class="timer">
+                <p>For how long would you like to work on this task?</p>
+                <select class="user-timer">
+                    <option value="ten">10 minutes</option>
+                    <option value="twenty">20 minutes</option>
+                    <option value="thirty">30 minutes</option>
+                </select>
+            </div>
+            <div class="go-btn-container">
+                <button class="go-btn">Let's Go!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="timer-started inactive">
+        <p class="user-name-print">
+
+        </p>
+        <p class="user-task-print">
+        
+        </p>
+        <p class="user-time-print">
+
+        </p>
+    </div>
+
+    <div class="timer-finished">
+        <p>
+            FANTASTIC job! You deserve a break. Nap time!
+        </p>
+        <img src="https://media.giphy.com/media/DCy2dnXPeGsO4/giphy.gif">
+        <button class="restart">Start Over</button>
+        <a href="https://giphy.com/gifs/dog-tired-DCy2dnXPeGsO4">via GIPHY</a></p>
+        <audio id="finished-sound" src="audio/daniel-deus.mp3"></audio>
+    </div>
+
+    <script src="app.js"></script>   
+</body>
+</html>

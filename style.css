@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/3996362/pexels-photo-3996362.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.window-one {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.712); 
+    color: white;
+    padding: 24px;
+    flex-direction: column;
+}
+
+.user-inputs p {
+    font-size: 1.3rem;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid white;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.712);
+    border: none;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+
+.go-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.go-btn {
+    padding: 10px;
+    margin: 5px;
+    transition: 0.5s ease-in;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    color: white;
+}
+
+.go-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.timer-started {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.712); 
+    color: white;
+    padding: 24px;
+    flex-direction: column;
+}
+
+.user-name-print, .user-task-print {
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.user-time-print {
+    font-size: 5rem;
+    padding: 20px;
+}
+
+.timer-finished {
+    display: none;
+    opacity: 0;
+    transition: 1s ease-in;
+}
+
+.timer-finished p {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.restart {
+    padding: 10px;
+    margin: 20px;
+    transition: 0.5s ease-in;
+    text-align: center;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    color: white;
+}
+
+.restart:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* for displaying the napping puppy once the timer is completed */
+.active {
+    transition: 1s ease-in;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+}
+
+/* for hiding things from the DOM when we don't need them */
+.inactive {
+    display: none;
+}
